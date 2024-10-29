@@ -33,6 +33,10 @@ class Participante:
          "tesoura": 2
       }
       return switcherTroca [self.escolha]
+   
+   def incrementPoint(self):
+      self.pontos += 1
+      
 
       
 #adicionando adiconado name como parâmentro e função chance
@@ -62,6 +66,11 @@ class Participante:
       
       result = self.compareEscolha(p1, p2)
       print(f"Resultado da partida {self.getResult(result)}")
+      
+      if result >0:
+         p1.incrementPoint()
+      else:
+         p2.incrementPoint
    
    def comparacao(self):
       print(" implement, adicone lógica futura")
