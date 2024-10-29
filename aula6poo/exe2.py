@@ -9,10 +9,11 @@ class TriLegal:
    def calcularPerimetro(self) -> float:
       return self.ladoA + self.ladoB + self.ladoC
    
-   def recalcular(self) -> float:
-      ladoA = float(input("lado a: "))
-      ladoB = float(input("lado b: "))
-      ladoC = float(input("lado c: "))
+   # def recalcular(self) -> float:
+   #    ladoA = float(input("lado a: "))
+   #    ladoB = float(input("lado b: "))
+   #    ladoC = float(input("lado c: "))
+   # entrei no loop, então automaticamente irá chamar a função do começo, não tendo que recalcular
       
    def tipoTrian(self) -> str:
       if self.ladoA == self.ladoB == self.ladoC : return "Equilátero, os três lados são iguais"
@@ -42,7 +43,8 @@ while True:
    perim = triangulo.calcularPerimetro()
    tipo = triangulo.tipoTrian()
    
-   print(f"o perímetro do triângulo é com {triangulo.ladoA}, {triangulo.ladoB}, {triangulo.ladoC} é de {perim}. e ele é do tipo {tipo}\n")
-   print("digite -1 para todos os lados sair: ")
+   print(f"o perímetro do triângulo com {triangulo.ladoA}, {triangulo.ladoB}, {triangulo.ladoC} é de {perim}. e ele é do tipo {tipo}\n")
+   print("digite -1 para todos os lados sair: \n")
+print("\nfim")
 
 

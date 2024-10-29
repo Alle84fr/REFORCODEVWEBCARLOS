@@ -5,7 +5,6 @@
 || ladoC |
 || tipo  |
 |método   | calcularPerimetro(self): float|
-||reclacular(self): float|
 || tipoTrian(self): str|
 ||condicao(self): bool|
 
